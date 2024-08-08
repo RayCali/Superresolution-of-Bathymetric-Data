@@ -1,6 +1,7 @@
 # Superresolution-of-Bathymetric-Data
 ![sr](https://github.com/user-attachments/assets/b3c7aa13-820f-4f4c-97b1-1b1a3cbc65b5)
 
+![sr_error](https://github.com/user-attachments/assets/1a8e61a1-2657-4d97-b5a3-eaa289b9402e)
 
 This repository contains the code and neural networks that have been used to gain the results in my Master's thesis paper "Super-Resolution of Bathymetric Data Using Diffusion Models". The paper can be found Here:xxxxx
 
