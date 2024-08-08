@@ -6,7 +6,7 @@ This work is also a direct extension of J.Shims et.al work so alot of the code i
 ## Data
 The data for training the diffusion model in this paper has been collected by the AUV called RAN, which was operated by Gothenburg University in 2022. It was equipped with an EM2040, a high resolution MBES and the data is in the form of point clouds.
 The location where the data was collected is Antarctica, more specifically, the Dotson Ice Shelf in west Antarctica. Unfortunately, I cannot share this dataset so this repository is specifically aimed towards those that have access to it.
-\br
+
 
 Data samples from said dataset can be generated with **data_gen.py**. This script will generate random slices of the pointcloud and save an npz file that can later be used to generate Signed Distance Functions (SDF)s. This is done by running **SDF_creator.py**. Be sure to load the correct npz file. If you also want intensity data in your dataset, you need to run **data_gen_intensity.py** which will use the npz file created by **data_gen.py** and add the corresponding intensity data. It will then save a new npz file which should then be used in **SDF_creator.py**.
 
