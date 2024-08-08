@@ -3,7 +3,10 @@ This repository contains the code and neural networks that have been used to gai
 
 This work is also a direct extension of J.Shims et.al work so alot of the code is taken from their amazing work. Here you can find their [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Shim_Diffusion-Based_Signed_Distance_Fields_for_3D_Shape_Generation_CVPR_2023_paper.html) and their [repository](https://github.com/Kitsunetic/SDF-Diffusion?tab=readme-ov-file).
 
-##
+## Data
+The data for training the diffusion model in this paper has been collected by the AUV called RAN, which was operated by Gothenburg University in 2022. It was equipped with an EM2040, a high resolution MBES and the data is in the form of point clouds.
+The location where the data was collected is Antarctica, more specifically, the Dotson Ice Shelf in west Antarctica. Unfortunately, I cannot share this dataset so this repository is specifically aimed towards those that have access to it.
+Data samples from said dataset can be generated with **data_gen.py**. This script will generate random slices of the pointcloud and save an npz file that can later be used to generate Signed Distance Functions (SDF)s. This is done by running **SDF_creator.py**. Be sure to load the correct npz file. If you also want intensity data in your dataset, you need to run **data_gen_intensity.py** which will use the npz file created by **data_gen.py** and add the corresponding intensity data. It will then save a new npz file which should then be used in **SDF_creator.py**.
 
 ## Training
 To run the training the command is:
@@ -22,7 +25,7 @@ in_channel: This is the number of input channels in the network. By default, thi
 use_intensity: set this to "yes" to train the model with intensity data
 
 ## Testing
-To test the networks performance and compare it against an interpolation technique, you can run the networkvsinterp.py script. 
+To test the networks performance and compare it against an interpolation technique, you can run the **networkvsinterp.py script**. 
 You can adjust variables in the script that are marked such as what interpolation technique to compare against. An important thing to note is that the configuration file (sonar.yaml) has to be configured for the model you are testing.
 For example, the new_loss variables have to be "yes" if you test a NLM and in_channel and useintensity has to be set to "yes" if you're testing a model that has been trained with intensity values.
 
