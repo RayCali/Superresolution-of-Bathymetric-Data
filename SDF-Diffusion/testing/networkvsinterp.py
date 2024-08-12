@@ -59,7 +59,7 @@ preprocess = instantiate_from_config(args2.preprocessor, "cuda")
 
 
 # Load the data
-directories = sorted(glob("../../data/sonar_data/*/", recursive=True))
+directories = sorted(glob("../../data/sonar_data4_intensity2/*/", recursive=True))
 filelist = []
 
 for directory in directories:

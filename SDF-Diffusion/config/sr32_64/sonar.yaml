@@ -66,7 +66,7 @@ dataset:
   target: src.datasets.dataset_sr.build_dataloaders
   params:
     ds_kwargs:
-      datafile: ../data/sonar_data
+      datafile: ../data/sonar_data4_intensity2
       cates: sonar
     dl_kwargs:
       batch_size: 8

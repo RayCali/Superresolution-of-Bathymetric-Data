@@ -1,4 +1,8 @@
 # Superresolution-of-Bathymetric-Data
+![sr](https://github.com/user-attachments/assets/b3c7aa13-820f-4f4c-97b1-1b1a3cbc65b5)
+
+![sr_error](https://github.com/user-attachments/assets/1a8e61a1-2657-4d97-b5a3-eaa289b9402e)
+
 This repository contains the code and neural networks that have been used to gain the results in my Master's thesis paper "Super-Resolution of Bathymetric Data Using Diffusion Models". The paper can be found Here:xxxxx
 
 This work is also a direct extension of J.Shims et.al work so alot of the code is taken from their amazing work. Here you can find their [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Shim_Diffusion-Based_Signed_Distance_Fields_for_3D_Shape_Generation_CVPR_2023_paper.html) and their [repository](https://github.com/Kitsunetic/SDF-Diffusion?tab=readme-ov-file).
@@ -32,3 +36,4 @@ You can adjust variables in the script that are marked such as what interpolatio
 For example, the new_loss variables have to be "yes" if you test a NLM and in_channel and useintensity has to be set to "yes" if you're testing a model that has been trained with intensity values.
 
 You can find the pretrained networks that have been used in my paper [here](https://drive.google.com/drive/folders/12YZ-nWYdIfh5gGyxmQJqnj45a_m1BVyw?usp=drive_link). Make sure to put each network folder into the SDF-Diffusion/results/sr32_64 folder.
+
