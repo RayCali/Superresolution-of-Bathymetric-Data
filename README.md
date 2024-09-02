@@ -3,7 +3,7 @@
 
 ![sr_error](https://github.com/user-attachments/assets/1a8e61a1-2657-4d97-b5a3-eaa289b9402e)
 
-This repository contains the code and neural networks that have been used to gain the results in my Master's thesis paper "Super-Resolution of Bathymetric Data Using Diffusion Models". The paper can be found Here:xxxxx
+This repository contains the code and neural networks that have been used to gain the results in my Master's thesis paper ["Super-Resolution of Bathymetric Data Using Diffusion Models"](https://drive.google.com/drive/u/0/folders/1pi6UFke-gLYHJ0jo_kyLcYq2JGKmFhR5).
 
 This work is also a direct extension of J.Shims et.al work so alot of the code is taken from their amazing work. Here you can find their [paper](https://openaccess.thecvf.com/content/CVPR2023/html/Shim_Diffusion-Based_Signed_Distance_Fields_for_3D_Shape_Generation_CVPR_2023_paper.html) and their [repository](https://github.com/Kitsunetic/SDF-Diffusion?tab=readme-ov-file).
 
